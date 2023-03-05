@@ -31,3 +31,10 @@ string[] ModArray(string[] arr)
 
     return new_arr;
 }
+string[] array = new string[9]
+{"Я", "нак", "оне", "ц", "смо", "Г", "2023", "Russia", "jsdfnhskjfsen"};
+Console.Write("Исходный массив: ");
+PrintArray(array);
+string[] arrayNew = ModArray(array);
+Console.Write("Новый массив, из элементов исходного, длинной не более 3х символов: ");
+PrintArray(arrayNew);
