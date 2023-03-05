@@ -8,3 +8,13 @@
     }
     Console.WriteLine("]");
 }
+string[] ModArray(string[] arr)
+{
+    int k = 0;  
+    for (int i = 0; i < arr.Length; i++)    //определение длины нового массива
+    {
+        if (arr[i].Length <= 3)
+        {
+            k++;
+        }
+    }
