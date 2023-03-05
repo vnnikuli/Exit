@@ -18,3 +18,16 @@ string[] ModArray(string[] arr)
             k++;
         }
     }
+    string[] new_arr = new string[k];
+    k = 0;
+    for (int i = 0; i < arr.Length; i++)  // заполнение нового массива
+    {
+        if (arr[i].Length <= 3)
+        {
+            new_arr[k] = arr[i];
+            k++;
+        }
+    }
+
+    return new_arr;
+}
